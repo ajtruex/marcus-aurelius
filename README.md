@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Marcus Aurelius Project
 
-## Getting Started
+A modern web application featuring Marcus Aurelius' wisdom and teachings using Next.js 14 and TailwindCSS.
 
-First, run the development server:
+## 🚀 Features
+
+- Voice-powered content using ElevenLabs API
+- Responsive design for all devices
+
+## 🛠️ Tech Stack
+
+- Next.js 14 (App Router)
+- TypeScript
+- TailwindCSS
+- ElevenLabs API
+- Vercel (Deployment)
+
+## 📦 Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/yourusername/marcus-aurelius.git
+
+# Navigate to project directory
+cd marcus-aurelius
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔧 Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env.local` file in the root directory:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+ELEVENLABS_API_KEY=your_api_key_here
+```
 
-## Learn More
+## 🖥️ Development
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Run development server
+npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Build for production
+npm run build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Start production server
+npm start
+```
