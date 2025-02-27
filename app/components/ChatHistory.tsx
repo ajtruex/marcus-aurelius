@@ -50,42 +50,42 @@
 //   "wGrrQlAcZwejZ91nn9Up"
 // )
 
-export default async function ChatHistory() {
-  const data = await fetch(
-    "https://api.elevenlabs.io/v1/convai/conversations/jBH7mwsxpsOz6k7MQgJ7",
-    {
-      headers: {
-        "xi-api-key": process.env.NEXT_PUBLIC_ELEVENLABS_API_KEY,
-      },
-    }
-  )
-  const posts = await data.json()
-  const transcript = posts.transcript
+// export default async function ChatHistory() {
+//   const data = await fetch(
+//     "https://api.elevenlabs.io/v1/convai/conversations/jBH7mwsxpsOz6k7MQgJ7",
+//     {
+//       headers: {
+//         "xi-api-key": process.env.NEXT_PUBLIC_ELEVENLABS_API_KEY,
+//       },
+//     }
+//   )
+//   const posts = await data.json()
+//   const transcript = posts.transcript
 
-  console.log(transcript)
-  return (
-    <div>
-      {transcript.map((message, index) => (
-        <div
-          key={index}
-          className={`flex mb-4 ${
-            message.role === "agent" ? "justify-start" : "justify-end"
-          }`}
-        >
-          <div
-            className={`p-3 rounded-lg ${
-              message.role === "agent"
-                ? "bg-blue-100 text-blue-900"
-                : "bg-gray-100 text-gray-900"
-            }`}
-          >
-            <p className="text-sm font-medium mb-1">
-              {message.role === "agent" ? "Marcus Aurelius" : "You"}
-            </p>
-            <p className="text-sm">{message.message}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  )
-}
+//   console.log(transcript)
+//   return (
+//     <div>
+//       {transcript.map((message, index) => (
+//         <div
+//           key={index}
+//           className={`flex mb-4 ${
+//             message.role === "agent" ? "justify-start" : "justify-end"
+//           }`}
+//         >
+//           <div
+//             className={`p-3 rounded-lg ${
+//               message.role === "agent"
+//                 ? "bg-blue-100 text-blue-900"
+//                 : "bg-gray-100 text-gray-900"
+//             }`}
+//           >
+//             <p className="text-sm font-medium mb-1">
+//               {message.role === "agent" ? "Marcus Aurelius" : "You"}
+//             </p>
+//             <p className="text-sm">{message.message}</p>
+//           </div>
+//         </div>
+//       ))}
+//     </div>
+//   )
+// }
