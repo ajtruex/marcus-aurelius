@@ -21,7 +21,7 @@ export default function Home() {
           <Card className="bg-purple-700 rounded-3xl  text-white w-1/3 mx-auto shadow-xl border border-solid border-neutral-500	">
             <CardHeader className="space-y-1 p-3">
               <CardTitle className="flex justify-center items-center text-3xl font-bold">
-                <Avatar className="mr-2 shadow-sm flex ring-1 ring-neutral-200	justify-center items-center w-12 h-12">
+                <Avatar className="mr-2 shadow-xs flex ring-1 ring-neutral-200	justify-center items-center w-12 h-12">
                   <AvatarImage src="./marcus2.png" alt="Avatar" className="" />
                 </Avatar>
                 AI Marcus Aurelius
@@ -40,7 +40,6 @@ export default function Home() {
           src="https://elevenlabs.io/convai-widget/index.js"
           async
           type="text/javascript"
-          className="flex justify-center items-center "
         ></script>
         {/* <Conversation /> */}
       </div>

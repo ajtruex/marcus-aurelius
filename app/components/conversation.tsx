@@ -61,7 +61,7 @@ export function Conversation() {
         {conversation.status !== "connected" ? (
           <button
             onClick={startConversation}
-            className="px-4 py-2 bg-black text-white rounded-[32px] flex flex-row hover:ring hover:ring-zinc-100/20"
+            className="px-4 py-2 bg-black text-white rounded-[32px] flex flex-row hover:ring-3 hover:ring-zinc-100/20"
           >
             <Phone size={14} className="mr-2 mt-1" />
             Start Chat
