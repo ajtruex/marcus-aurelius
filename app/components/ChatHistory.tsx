@@ -40,7 +40,7 @@
 //     </div>
 //   )
 // }
-import { ElevenLabsClient } from "elevenlabs"
+// import { ElevenLabsClient } from "elevenlabs"
 
 // const client = new ElevenLabsClient({
 //   apiKey: "process.env.NEXT_PUBLIC_ELEVENLABS_API_KEY",
