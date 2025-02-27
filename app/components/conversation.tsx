@@ -1,18 +1,13 @@
 "use client"
 import { useConversation } from "@11labs/react"
-import { useCallback, useState } from "react"
+import { useCallback } from "react"
 import { Phone, PhoneOff } from "lucide-react"
 
 export function Conversation() {
-  const [messages, setMessages] = useState([])
-
   const conversation = useConversation({
     onConnect: () => console.log("Connected"),
     onDisconnect: () => console.log("Disconnected"),
-    onMessage: (message) => {
-      console.log("Message:", message)
-      setMessages((prev) => [...prev, message])
-    },
+
     onError: (error) => console.error("Error:", error),
   })
 
